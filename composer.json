@@ -1,0 +1,24 @@
+{
+    "name": "ksardv/quiz",
+    "description": "quiz package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ksardv",
+            "email": "kolyo.sardamov@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Quiz\\": "src/"}
+    },
+    "scripts": {
+        "post-update-cmd": "Quiz\\Database\\Migrations::run"
+    },
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
